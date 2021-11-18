@@ -1,0 +1,44 @@
+﻿
+@model WcfEmp.EmployeeModel[]
+
+
+
+
+@{
+
+    ViewBag.Title = "HomePage";
+}
+
+
+
+@if (TempData["msg"] != null)
+{
+    <p class="alert alert-success">@TempData["msg"]</p>
+}
+
+
+
+
+<table class="table table-condensed table-hover">
+    @foreach (WcfEmp.EmployeeModel emp in Model)
+    {
+       
+    <tr>
+        <td>@emp.Id</td>
+        <td>
+            @String.Format("{0} {1}", emp.FirstName, emp.LastName)
+        </td>
+        <td>@(emp.BirthDate?.ToString("dd.MM.yyyy") ?? "No birth date")</td>
+
+        <td><a href="~/home/edit?Id=@emp.Id">Edit</a></td>
+
+        <td>@Html.ActionLink("Delete", "delete", "home", new { Id = emp.Id })</td>
+
+    </tr>
+    }
+
+
+
+</table>
+
+

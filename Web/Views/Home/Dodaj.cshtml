@@ -1,0 +1,50 @@
+﻿
+@model EmpViewModel
+
+@{
+
+    ViewBag.Title = "New Employee";
+    var isedit = Model != null;
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+       Add Employee
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm(isedit ? "Edit" : "Add", "Home", FormMethod.Post, new { @class = "form"}))
+        {
+            if (isedit)
+            {
+                @Html.HiddenFor(m => m.Id)
+            }
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName, Model?.FirstName, new { @class = "form-control", placeholder = "First Name" })
+                @Html.ValidationMessageFor(m => m.FirstName, null, new { @class = "text-danger" })
+            </div>
+
+            
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName, Model?.LastName, new { @class = "form-control", placeholder = "Last Name" })
+                @Html.ValidationMessageFor(m => m.LastName, null, new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.BirthDate)
+                @Html.TextBoxFor(m => m.BirthDate, Model?.BirthDate?.ToString("dd.MM.yyyy"), new { @class = "form-control", placeholder ="Birth Date" })
+                @Html.ValidationMessageFor(m => m.BirthDate, null, new { @class = "text-danger" })
+            </div>
+
+            
+
+
+            <button class="btn btn-default" type="submit">@(isedit ? "Edit" : "Add")</button>
+        }
+    </div>
+</div>
+
+
+

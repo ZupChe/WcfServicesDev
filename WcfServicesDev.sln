@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyServices", "MyServices\MyServices.csproj", "{60ABB556-F0DC-420B-A306-49DCE0729D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudServiceHost", "CrudServiceHost\CrudServiceHost.csproj", "{0E5B5A7A-5E53-46BF-91A3-2F1B9AE17CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{0665B565-2BB0-43DF-BA4E-A838EF97BD5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60ABB556-F0DC-420B-A306-49DCE0729D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60ABB556-F0DC-420B-A306-49DCE0729D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60ABB556-F0DC-420B-A306-49DCE0729D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60ABB556-F0DC-420B-A306-49DCE0729D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5B5A7A-5E53-46BF-91A3-2F1B9AE17CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5B5A7A-5E53-46BF-91A3-2F1B9AE17CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5B5A7A-5E53-46BF-91A3-2F1B9AE17CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5B5A7A-5E53-46BF-91A3-2F1B9AE17CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0665B565-2BB0-43DF-BA4E-A838EF97BD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0665B565-2BB0-43DF-BA4E-A838EF97BD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0665B565-2BB0-43DF-BA4E-A838EF97BD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0665B565-2BB0-43DF-BA4E-A838EF97BD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6323682-1AC4-46DE-873C-AB839D68F91B}
+	EndGlobalSection
+EndGlobal
